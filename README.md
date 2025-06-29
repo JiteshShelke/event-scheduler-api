@@ -9,7 +9,6 @@ A simple 🐍 Python Flask REST API for scheduling events with create, read, upd
 - ✏️ Update existing events
 - 🗑️ Delete events
 - 🔍 Search events by title or description
-- ❤️ Health check endpoint
 
 ## 🔧 Technologies Used
 
