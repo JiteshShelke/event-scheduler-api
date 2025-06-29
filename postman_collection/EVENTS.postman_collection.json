@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "f1509b9b-5178-48cd-bce7-049fe0b054c7",
+		"name": "EVENTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46283557",
+		"_collection_link": "https://jiteshshelke.postman.co/workspace/Jitesh-Shelke-'s-Workspace~96ffdaee-fdc7-4b19-8d0a-708c484961c6/collection/46283557-f1509b9b-5178-48cd-bce7-049fe0b054c7?action=share&source=collection_link&creator=46283557"
+	},
+	"item": [
+		{
+			"name": "ADD",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/events",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL EVENTS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Client Call\",\r\n  \"description\": \"Monthly update call with the client\",\r\n  \"start_time\": \"2025-06-30 15:30\",\r\n  \"end_time\": \"2025-06-30 16:00\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/events",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEARCH",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Client Call\",\r\n  \"description\": \"Monthly update call with the client\",\r\n  \"start_time\": \"2025-06-30 15:30\",\r\n  \"end_time\": \"2025-06-30 16:00\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/events/search?q=MASTER",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"events",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "MASTER"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"JITESH\",\r\n    \"description\": \"Deploy the new release to production\",\r\n    \"start_time\": \"2025-07-02 18:00\",\r\n    \"end_time\": \"2025-07-02 19:00\",\r\n    \"id\": 5\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/events/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"events",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"MASTER\",\r\n    \"description\": \"Deploy the new release to production\",\r\n    \"start_time\": \"2025-07-02 18:00\",\r\n    \"end_time\": \"2025-07-02 19:00\",\r\n    \"id\": 5\r\n    }"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/events/10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"events",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
