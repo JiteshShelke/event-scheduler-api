@@ -41,19 +41,6 @@ python app.py
 
 ## 🔗 API Endpoints
 
-### ✅ Health Check
-
-`GET /health`
-
-📄 **Response:**
-```json
-{
-  "status": "Event Scheduler API is running"
-}
-```
-
----
-
 ### 📋 Get All Events
 
 `GET /events`
@@ -220,5 +207,3 @@ event-scheduler-api/
 ## ✨ Author
 
 👤 **Jitesh Shelke**
-
----
