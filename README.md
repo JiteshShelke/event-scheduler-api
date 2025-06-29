@@ -17,10 +17,11 @@ A simple 🐍 Python Flask REST API for scheduling events with create, read, upd
 - ⚡ Flask
 
 ## 📂 Setup Instructions
-
+s
 1. Clone the repository:
 
    git clone https://github.com/JiteshShelke/event-scheduler-api.git
+   
    cd event-scheduler-api
 
 2. Install dependencies:
