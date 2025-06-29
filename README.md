@@ -222,7 +222,3 @@ event-scheduler-api/
 👤 **Jitesh Shelke**
 
 ---
-
-## 💡 Note
-
-⚠️ For production use, consider deploying with **Gunicorn** or **uWSGI** behind **Nginx** instead of the default Flask dev server.
