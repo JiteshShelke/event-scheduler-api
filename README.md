@@ -1,20 +1,20 @@
-# Event Scheduler API
+# 📅✨ Event Scheduler API
 
-A simple Python Flask REST API for scheduling events with create, read, update, delete, and search functionalities, including persistent JSON storage.
+A simple 🐍 Python Flask REST API for scheduling events with create, read, update, delete, and search functionalities, including persistent JSON storage. 💾
 
 ## 🚀 Features
 
-- Create new events
-- View all events (sorted by start time)
-- Update existing events
-- Delete events
-- Search events by title or description
-- Health check endpoint
+- ➕ Create new events
+- 📋 View all events (sorted by start time)
+- ✏️ Update existing events
+- 🗑️ Delete events
+- 🔍 Search events by title or description
+- ❤️ Health check endpoint
 
 ## 🔧 Technologies Used
 
-- Python 3.x
-- Flask
+- 🐍 Python 3.x
+- ⚡ Flask
 
 ## 📂 Setup Instructions
 
@@ -37,7 +37,7 @@ The server will start at:
 
 ## 🔗 API Endpoints
 
-### Health Check
+### ✅ Health Check
 
 GET /health
 
@@ -47,13 +47,13 @@ Response:
   "status": "Event Scheduler API is running"
 }
 
-### Get all events
+### 📋 Get all events
 
 GET /events
 
 Returns all events sorted by start time.
 
-### Create an event
+### ➕ Create an event
 
 POST /events
 
@@ -73,7 +73,7 @@ Response:
   "event": { ... }
 }
 
-### Update an event
+### ✏️ Update an event
 
 PUT /events/{id}
 
@@ -93,7 +93,7 @@ Response:
   "event": { ... }
 }
 
-### Delete an event
+### 🗑️ Delete an event
 
 DELETE /events/{id}
 
@@ -103,7 +103,7 @@ Response:
   "message": "Event deleted"
 }
 
-### Search events
+### 🔍 Search events
 
 GET /events/search?q=meeting
 
@@ -116,7 +116,7 @@ Response:
 
 ## 📝 Example Commands and Outputs
 
-### Get all events
+### 📋 Get all events
 
 Send GET request via Postman or browser to http://127.0.0.1:5000/events
 
@@ -132,7 +132,7 @@ Output:
   }
 ]
 
-### Create an event
+### ➕ Create an event
 
 Send POST request to http://127.0.0.1:5000/events with the example JSON body above.
 
@@ -151,11 +151,11 @@ Output:
 
 ## 📌 Dependencies
 
-- Flask
+- ⚡ Flask
 
 Install via:
 
-pip install Flask
+   pip install Flask
 
 ## 📁 File Structure
 
@@ -171,8 +171,8 @@ https://github.com/JiteshShelke/event-scheduler-api
 
 ## ✨ Author
 
-Jitesh Shelke
+👤 Jitesh Shelke
 
 ## 💡 Note
 
-For production deployment, use a production WSGI server like Gunicorn instead of the Flask development server.
+⚠️ For production deployment, use a production WSGI server like Gunicorn instead of the Flask development server.
